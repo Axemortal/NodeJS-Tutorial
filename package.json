@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "Computers can only understand Machine code in the binary format\r Assembly Languages help to make it slightly easier for us to code and compiles down to machine code\r C++ abstracts further away from machine code and JavaScript is an even higher language than C++, hence JS needs a compiler for the machine to understand it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devServer": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axemortal/NodeJS-Tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Axemortal/NodeJS-Tutorial/issues"
+  },
+  "homepage": "https://github.com/Axemortal/NodeJS-Tutorial#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
