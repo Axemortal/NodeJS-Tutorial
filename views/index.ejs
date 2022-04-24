@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <%- include('./partials/header')%>
+  </head>
+  <body>
+    <form action="/index" method="post">
+      <input type="text" name="name" />
+    </form>
+
+    <% if (true) { %>
+    <p>x is big</p>
+    <% } %>
+
+    <a data-doc=""></a>
+    <!-- data-name is an attribute in html where you can add your own attribute
+reference by document.getElementByZZZ.dataset.name -->
+
+    <!-- frontend fetch is an ajax request and can only accept a JSON or text response -->
+
+    <!-- In the frontend, window.location.href = newURL -->
+    <script>
+      // Set the URL of the page to the new URL
+      // Cannot redirect on the backend as the frontend fetch is an Ajax request and can only accept a JSON or Text Response
+      window.location.href = "/index";
+    </script>
+  </body>
+</html>

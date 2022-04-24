@@ -51,23 +51,40 @@ Commononly used statuses
 
 # express - Backend Framework
 
-res.sendFile('<path>', {root: \_\_dirname}) - By default, first argument should be the absolute path for the file. If a relative path is used, a 2nd argument containing an object with key root should be used to tell express where the path is relative to
-res.redirect('<redirectUrl>')
+index.js
 
 # ejs - View Engine
 
-Each line of js in ejs needs to be in <% %>
-<% if (x > 0) { %>
-
- <p> x is big </p>
-<% } %>
 The process of loading content through the view engine before finally spitting out the HTML page is known as server-side rendering
+
+Each line of JS in ejs needs to be in <% %>
 
 Partials - Parts of a template that can be reused
 
-partials (folder name)
 <%= %> - Escapes special characters to return a string value
-<%- include('') %> - Returns a raw HTML value instead
+<%- %> - Returns a raw HTML value instead
+
+# Public Static Files
+
+The server automatically protects files in the directory so that the browser cannot gain access to any file whatsoever
+Hence there is a need to use a middleware to define a folder that browsers can access, so that CSS files, images etc. can be accessed and loaded in the browser
+
+# mongoose - Object Document Mapping Library
+
+Schemas define the structure of a type of data/document (Similar to types and interfaces in typescript)
+The structure consists of properties and their respective types
+A model then wraps around this schema and allow us to communicate with the database
+
+Name property is added to all the input fields so that data can be referenced using that name in the future
+
+# Dynamic Routes
+
+Route parameters - The variable parts of the route that may change value
+e.g. localhost:3000/users/:id
+
+# Editing data on the Frontend
+
+Script tags in ejs will be running on the frontend browser instead of running at the backend
 
 # Lodash - Utility library
 
